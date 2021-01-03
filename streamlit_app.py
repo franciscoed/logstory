@@ -16,11 +16,9 @@ def main():
     )
 
     st.markdown(
-        "<h1 style='text-align: center;'>AWS ALB Log Story</h1>", unsafe_allow_html=True
+        "<h1 style='text-align: center;'>AWS LB Log Story</h1>", unsafe_allow_html=True
     )
-    uploaded_file = st.file_uploader(
-        "Upload here you AWS ALB (Application LB only!!!)."
-    )
+    uploaded_file = st.file_uploader("Upload here you AWS LB Log.")
 
     if uploaded_file is not None:
         if lb_type == "AWS Classic":
